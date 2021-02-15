@@ -47,6 +47,22 @@ jobs:
         name: release-apk
         path: build/app/outputs/apk/release/app-release.apk
     
-    # Publish APK to SkyDroid
+    # Update metadata and publish APK to SkyDroid
     - run: flutter pub global activate skydroid_cli
     - run: $FLUTTER_HOME/.pub-cache/bin/skydroid publish
+
+    # Commit the updated metadata file backt to the repo
+    - uses: EndBug/add-and-commit@v7
+      with:
+        add: 'skydroid-app.yaml'
+        #author_name: SkyDroid CLI
+        #author_email: mail@example.com
+        message: 'Published new release on SkyDroid'
+        #pull_strategy: '--no-rebase or --no-ff or --rebase'
+        # Whether to use the --signoff option on `git commit` (only `true` and `false` are accepted)
+        # Default: false
+        #signoff: true
+
+        # Arguments for the git tag command (the tag name always needs to be the first word not preceded by an hyphen)
+        # Default: ''
+        # tag: 'v1.0.0 --force'
