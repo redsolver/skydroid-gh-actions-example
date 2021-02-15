@@ -13,9 +13,13 @@ localized:
     summary: A short summary of your app
 
 builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    sha256: 993f227dbdf0aea5e0a8bddb9028d5197defe58e14975fff8b9e09551503f496
+    apkLink: sia://AAAC8sF-bcx88vg5GdD8t0-VFZrDvqB9TdlbacPRZDru9w
 
-currentVersionName:
-currentVersionCode:
+currentVersionName: 1.0.0
+currentVersionCode: 1
 
 added: 1613416440331
-lastUpdated: 1613416440331
+lastUpdated: 1613418231065
