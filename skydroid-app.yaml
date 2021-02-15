@@ -1,0 +1,21 @@
+name: Flutter example app with GitHub Actions CI
+authorName: redsolver
+packageName: net.redsolver.skydroid_gh_actions_example
+
+icon: sia://AACxW-MqKz5w7--8ywNhHsCR1b85cC_PmlanS0NFith8FA
+
+localized:
+  en-US:
+    description: |-
+      your
+      app
+      description
+    summary: A short summary of your app
+
+builds:
+
+currentVersionName:
+currentVersionCode:
+
+added: 1613416440331
+lastUpdated: 1613416440331
